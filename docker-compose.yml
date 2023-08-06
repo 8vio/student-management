@@ -23,6 +23,7 @@ services:
     ports:
       - 3001:3001
     environment:
+      NODE_ENV: production
       PORT: 3001
       DB_NAME: studentsmgt
       DB_USER: studentmgt-user
