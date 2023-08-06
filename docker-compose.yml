@@ -39,5 +39,4 @@ volumes:
   studentsmgt_db:
   student-management:
 
-# networks:
-#   esnet:
+

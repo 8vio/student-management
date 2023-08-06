@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+
+  postgres:
+    image: postgres:10.1-alpine
+    container_name: postgres-students
+    environment:
+      POSTGRES_USER: studentmgt-user
+      POSTGRES_PASSWORD: studentmgt-password
+      POSTGRES_DB: studentsmgt
+    ports:
+      - 5432:5432
+    volumes:
+      - ./db_init:/db_init
+      - studentsmgt_db:/var/lib/postgresql/data
+
+volumes:
+  studentsmgt_db:
+
