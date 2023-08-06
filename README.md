@@ -113,3 +113,18 @@ npm run lint:fix
 - `npm run openapi-spec`: Generate OpenAPI spec into a file
 - `npm run docker:build`: Build a Docker image for this application
 - `npm run docker:run`: Run this application inside a Docker container
+
+
+# Create a user (Opened for testing purposes)
+
+Use the endpoint `POST localhost:3000/sign-up`
+
+```sh
+{
+"username":"YourUser",
+"password": "YourPassword"
+}
+```
+
+or directly through the swagger http://localhost:3001/explorer/#/LoginController/LoginController.create clicking in `Try it out`
+
