@@ -69,10 +69,13 @@ export class StudentsController {
 
   let students = await this.studentsRepository.find({where:{ic_active:true}});
 
+
+
   // Changing format to MM/DD/YYYY
-  students.map(student =>
+  students.map(student => {
       student.date_birth = getFormattedDate(student.date_birth)
-    );
+
+  });
 
     return students
   }
