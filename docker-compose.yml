@@ -28,7 +28,7 @@ services:
       DB_NAME: studentsmgt
       DB_USER: studentmgt-user
       DB_PASS: studentmgt-password
-    # restart: always
+    restart: always
     depends_on:
       - postgres
     links:

@@ -72,7 +72,7 @@ Expected output
 Before start, the application will migrate database schemas. The Migration could be performed individually, check [here](#other-useful-commands) for more detail
 
 ```sh
-npm start
+npm run start
 ```
 
 You can also run `node .` to skip the build step.
